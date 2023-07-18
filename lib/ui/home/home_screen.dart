@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/settings/settings_screen.dart';
-import 'package:news_app/ui/category_grid.dart';
-import 'package:news_app/ui/category_screen.dart';
+import 'package:news_app/ui/home/category_grid.dart';
+import 'package:news_app/ui/category/category_widget.dart';
+import 'package:news_app/ui/settings/settings_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'home';
@@ -13,37 +13,37 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   List<Category> category = [
     Category(
-      CategoryId: "Sports",
+      CategoryId: "sports",
       CategoryImage: "assets/images/ball.png",
       CategoryTitle: "Sports",
       CategoryBackgroud: const Color.fromARGB(255, 201, 28, 34),
     ),
     Category(
-      CategoryId: "General",
+      CategoryId: "general",
       CategoryImage: "assets/images/Politics.png",
       CategoryTitle: "Politics",
       CategoryBackgroud: const Color.fromARGB(255, 0, 62, 144),
     ),
     Category(
-      CategoryId: "Health",
+      CategoryId: "health",
       CategoryImage: "assets/images/health.png",
       CategoryTitle: "Health",
       CategoryBackgroud: const Color.fromARGB(255, 237, 30, 121),
     ),
     Category(
-      CategoryId: "Bussines",
+      CategoryId: "business",
       CategoryImage: "assets/images/bussines.png",
-      CategoryTitle: "Bussines",
+      CategoryTitle: "Business",
       CategoryBackgroud: const Color.fromARGB(255, 207, 126, 72),
     ),
     Category(
-      CategoryId: "Environment",
+      CategoryId: "technology",
       CategoryImage: "assets/images/environment.png",
-      CategoryTitle: "Environment",
+      CategoryTitle: "Technology",
       CategoryBackgroud: const Color.fromARGB(255, 72, 130, 207),
     ),
     Category(
-      CategoryId: "Science",
+      CategoryId: "science",
       CategoryImage: "assets/images/science.png",
       CategoryTitle: "Science",
       CategoryBackgroud: const Color.fromARGB(255, 242, 211, 82),
